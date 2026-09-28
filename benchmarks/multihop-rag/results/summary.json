@@ -1,0 +1,195 @@
+{
+  "arms": {
+    "jylus": {
+      "by_question_type": {
+        "comparison_query": {
+          "official_metrics_percent": {
+            "ap_at_10_percent": 50.880534670008345,
+            "hit_at_10_percent": 100.0,
+            "hit_at_4_percent": 89.47368421052632,
+            "mrr_at_10_percent": 79.79197994987469
+          },
+          "questions": 95
+        },
+        "inference_query": {
+          "official_metrics_percent": {
+            "ap_at_10_percent": 38.27445569543271,
+            "hit_at_10_percent": 100.0,
+            "hit_at_4_percent": 86.20689655172413,
+            "mrr_at_10_percent": 74.36279875935048
+          },
+          "questions": 87
+        },
+        "temporal_query": {
+          "official_metrics_percent": {
+            "ap_at_10_percent": 49.12379972565158,
+            "hit_at_10_percent": 100.0,
+            "hit_at_4_percent": 92.5925925925926,
+            "mrr_at_10_percent": 81.0515873015873
+          },
+          "questions": 54
+        }
+      },
+      "completed_questions": 256,
+      "failures": 0,
+      "official_metrics_percent": {
+        "ap_at_10_percent": 45.831413662451794,
+        "hit_at_10_percent": 100.0,
+        "hit_at_4_percent": 88.98305084745762,
+        "mrr_at_10_percent": 78.07875975248857
+      },
+      "scored_questions": 236,
+      "server_ms": {
+        "mean": 1421.56735546875,
+        "p50": 1443.918,
+        "p95": 1753.109
+      },
+      "supplementary_exact_document_metrics_percent": {
+        "complete_evidence_at_10_percent": 65.67796610169492,
+        "map_at_10_percent": 60.69629405434489,
+        "ndcg_at_10_percent": 72.37452296779878,
+        "recall_at_10_percent": 85.94632768361582
+      },
+      "wall_ms": {
+        "mean": 1858.36825,
+        "p50": 1878.906,
+        "p95": 2209.688
+      }
+    },
+    "nvidia_style_agentic_rag": {
+      "by_question_type": {
+        "comparison_query": {
+          "official_metrics_percent": {
+            "ap_at_10_percent": 42.91088833194096,
+            "hit_at_10_percent": 100.0,
+            "hit_at_4_percent": 83.15789473684211,
+            "mrr_at_10_percent": 70.26148705096072
+          },
+          "questions": 95
+        },
+        "inference_query": {
+          "official_metrics_percent": {
+            "ap_at_10_percent": 36.27231192604756,
+            "hit_at_10_percent": 98.85057471264368,
+            "hit_at_4_percent": 88.50574712643679,
+            "mrr_at_10_percent": 74.18080642218573
+          },
+          "questions": 87
+        },
+        "temporal_query": {
+          "official_metrics_percent": {
+            "ap_at_10_percent": 37.82517636684303,
+            "hit_at_10_percent": 96.29629629629629,
+            "hit_at_4_percent": 87.03703703703704,
+            "mrr_at_10_percent": 65.69444444444444
+          },
+          "questions": 54
+        }
+      },
+      "completed_questions": 256,
+      "failures": 0,
+      "official_metrics_percent": {
+        "ap_at_10_percent": 39.29993666487311,
+        "hit_at_10_percent": 98.72881355932203,
+        "hit_at_4_percent": 86.01694915254238,
+        "mrr_at_10_percent": 70.66131961259079
+      },
+      "scored_questions": 236,
+      "supplementary_exact_document_metrics_percent": {
+        "complete_evidence_at_10_percent": 54.66101694915254,
+        "map_at_10_percent": 50.516713747645944,
+        "ndcg_at_10_percent": 63.541656282449544,
+        "recall_at_10_percent": 78.10734463276836
+      },
+      "wall_ms": {
+        "mean": 3354.89970703125,
+        "p50": 3551.843,
+        "p95": 4406.601
+      }
+    }
+  },
+  "averaging": "macro mean over the 236 non-null questions retained by the upstream evaluator",
+  "claim_boundary": "Jylus retrieved better evidence than this NVIDIA-style agentic baseline on this frozen cohort. No final generated answers were evaluated.",
+  "cohort_questions": 256,
+  "comparison": {
+    "jylus_minus_baseline_points": 6.531476997578693,
+    "paired_bootstrap": {
+      "ci_points": [
+        3.7491063721863505,
+        9.320885598825216
+      ],
+      "confidence": 0.95,
+      "resamples": 100000,
+      "seed": 42
+    },
+    "paired_sign_test": {
+      "alternative": "Jylus > baseline",
+      "baseline_better": 78,
+      "jylus_better": 140,
+      "non_ties": 218,
+      "one_sided_p_value": 1.6082830509535604e-05,
+      "tie": 18
+    },
+    "primary_metric": "upstream MultiHop-RAG MAP@10"
+  },
+  "dataset": "yixuantt/MultiHopRAG",
+  "dataset_revision": "71ac0d0bd1f951d2d6b70311f7d2ae404e1ffa82",
+  "evaluation": "internal",
+  "null_questions": {
+    "answerability_scored": false,
+    "baseline_returned_10": 20,
+    "count": 20,
+    "jylus_returned_10": 20,
+    "official_treatment": "excluded by upstream retrieval_evaluate.py"
+  },
+  "officially_excluded_null_questions": 20,
+  "officially_scored_questions": 236,
+  "run_metadata": {
+    "baseline_rankings_frozen_at_utc": "2026-09-28T00:38:17Z",
+    "cohort_frozen_at_utc": "2026-09-28T00:20:02.944122Z",
+    "concurrency": {
+      "jylus": 2,
+      "nvidia_style_agentic_rag": 1
+    },
+    "cost_reporting": "not reported; common-basis energy, hardware, account and shared-service costs were not measured",
+    "evaluation": "internal",
+    "failures": {
+      "jylus": 0,
+      "nvidia_style_agentic_rag": 0
+    },
+    "ingestion": {
+      "all_receipts_verified": true,
+      "batches": 21,
+      "documents": 609,
+      "elapsed_seconds": 39.169
+    },
+    "jylus_api_build_identifier": "6d4aba810ee2962326c04e3bcfd837f26def7f58",
+    "jylus_rankings_frozen_at_utc": "2026-09-28T00:31:25Z",
+    "locations": {
+      "client": "Perth, Australia",
+      "jylus": "live public Jylus API in Sydney; dedicated namespace in an existing authenticated account",
+      "nvidia_style_agentic_rag": "local Windows workstation"
+    },
+    "official_inputs_exported_at_utc": "2026-09-28T00:39:42Z",
+    "official_scores_frozen_at_utc": "2026-09-28T00:40:53Z",
+    "preview": {
+      "description": "A Jylus-only scoring preview was viewed after Jylus rankings froze while the already-configured baseline run was still in progress.",
+      "effect_on_configuration_or_outputs": "none",
+      "exact_timestamp_retained": false
+    },
+    "query_runtime_seconds": {
+      "jylus": 238.671,
+      "nvidia_style_agentic_rag": 859.18
+    },
+    "run_date_utc": "2026-09-28",
+    "schema": "jylus.multihop-rag-public-run-metadata.v1",
+    "source_artifact_sha256": {
+      "jylus_rankings": "e25797304865a91bb052e93541fa3556355c655c5b8340f8c9902f46481be173",
+      "nvidia_style_agentic_rag_rankings": "5d3b34e223d4476b7d22305b5681a920d6d1d63047c81a510f048c8ac1ce134e",
+      "official_evaluator_output": "8341bd2e33d083e47c849c4dfe4d6a9abfad712a065ef637f53a66a16777df4b",
+      "official_evaluator_score": "d3641df61dbf13f52c811fcfeda510d81d74f0b96177ebfae2f208b41660e7e8",
+      "paired_analysis": "05877156561ae4c1a2ec66734b71f41eddd44c9b5fafde32ae35d6dc80adb277"
+    }
+  },
+  "schema": "jylus.multihop-rag-public-summary.v1"
+}

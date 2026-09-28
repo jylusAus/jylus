@@ -1,0 +1,24 @@
+{
+  "ollama": {
+    "url": "http://127.0.0.1:11434",
+    "model": "nemotron-3-nano:4b",
+    "embedding_model": "bge-m3"
+  },
+  "agentic": {
+    "max_plan_tasks": 3,
+    "initial_top_k": 20,
+    "lane_top_k": 20,
+    "rrf_k": 60,
+    "output_top_k": 10,
+    "planner_context_characters": 18000,
+    "corpus_embedding_character_limit": 8000
+  },
+  "nvidia": {
+    "blueprint_git_sha": "cc84e6ac93801acb758570e3415ce355b550cf36",
+    "prompt_source": "vendor/rag/src/nvidia_rag/rag_server/agentic_rag/prompt.py"
+  },
+  "jylus": {
+    "base_url": "https://api.jylus.ai",
+    "api_key_env": "JYLUS_API_KEY"
+  }
+}

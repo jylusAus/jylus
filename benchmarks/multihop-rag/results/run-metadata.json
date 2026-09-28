@@ -1,0 +1,47 @@
+{
+  "baseline_rankings_frozen_at_utc": "2026-09-28T00:38:17Z",
+  "cohort_frozen_at_utc": "2026-09-28T00:20:02.944122Z",
+  "concurrency": {
+    "jylus": 2,
+    "nvidia_style_agentic_rag": 1
+  },
+  "cost_reporting": "not reported; common-basis energy, hardware, account and shared-service costs were not measured",
+  "evaluation": "internal",
+  "failures": {
+    "jylus": 0,
+    "nvidia_style_agentic_rag": 0
+  },
+  "ingestion": {
+    "all_receipts_verified": true,
+    "batches": 21,
+    "documents": 609,
+    "elapsed_seconds": 39.169
+  },
+  "jylus_api_build_identifier": "6d4aba810ee2962326c04e3bcfd837f26def7f58",
+  "jylus_rankings_frozen_at_utc": "2026-09-28T00:31:25Z",
+  "locations": {
+    "client": "Perth, Australia",
+    "jylus": "live public Jylus API in Sydney; dedicated namespace in an existing authenticated account",
+    "nvidia_style_agentic_rag": "local Windows workstation"
+  },
+  "official_inputs_exported_at_utc": "2026-09-28T00:39:42Z",
+  "official_scores_frozen_at_utc": "2026-09-28T00:40:53Z",
+  "preview": {
+    "description": "A Jylus-only scoring preview was viewed after Jylus rankings froze while the already-configured baseline run was still in progress.",
+    "effect_on_configuration_or_outputs": "none",
+    "exact_timestamp_retained": false
+  },
+  "query_runtime_seconds": {
+    "jylus": 238.671,
+    "nvidia_style_agentic_rag": 859.18
+  },
+  "run_date_utc": "2026-09-28",
+  "schema": "jylus.multihop-rag-public-run-metadata.v1",
+  "source_artifact_sha256": {
+    "jylus_rankings": "e25797304865a91bb052e93541fa3556355c655c5b8340f8c9902f46481be173",
+    "nvidia_style_agentic_rag_rankings": "5d3b34e223d4476b7d22305b5681a920d6d1d63047c81a510f048c8ac1ce134e",
+    "official_evaluator_score": "d3641df61dbf13f52c811fcfeda510d81d74f0b96177ebfae2f208b41660e7e8",
+    "paired_analysis": "05877156561ae4c1a2ec66734b71f41eddd44c9b5fafde32ae35d6dc80adb277",
+    "official_evaluator_output": "8341bd2e33d083e47c849c4dfe4d6a9abfad712a065ef637f53a66a16777df4b"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "dataset": {
+    "documents": 609,
+    "id": "yixuantt/MultiHopRAG",
+    "licence": "ODC-By",
+    "questions": 2556,
+    "revision": "71ac0d0bd1f951d2d6b70311f7d2ae404e1ffa82"
+  },
+  "jylus": {
+    "api_build_identifier": "6d4aba810ee2962326c04e3bcfd837f26def7f58",
+    "concurrency": 2,
+    "context": {
+      "include_documents": false,
+      "max_contradictions": 12,
+      "max_facts": 10,
+      "max_timeline": 20,
+      "mode": "decision",
+      "token_budget": 8000
+    },
+    "endpoint": "https://api.jylus.ai/api/v1/analyze",
+    "limit": 10,
+    "scan_limit": 20000,
+    "scope": "dedicated namespace in an existing authenticated account"
+  },
+  "nvidia_style_agentic_rag": {
+    "blueprint_repository": "https://github.com/NVIDIA-AI-Blueprints/rag",
+    "blueprint_revision": "cc84e6ac93801acb758570e3415ce355b550cf36",
+    "concurrency": 1,
+    "corpus_embedding_character_limit": 8000,
+    "description": "local adaptation using NVIDIA RAG Blueprint planner prompts; not an official NVIDIA benchmark",
+    "embedding_model": {
+      "name": "bge-m3:latest",
+      "ollama_manifest_id": "790764642607"
+    },
+    "initial_top_k": 20,
+    "lane_top_k": 20,
+    "max_plan_tasks": 3,
+    "output_top_k": 10,
+    "planner_context_characters": 18000,
+    "planner_model": {
+      "name": "nemotron-3-nano:4b",
+      "ollama_manifest_id": "6cc467f05439"
+    },
+    "prompt_file": "src/nvidia_rag/rag_server/agentic_rag/prompt.py",
+    "prompt_wording_modified": false,
+    "rrf_k": 60
+  },
+  "official_evaluator": {
+    "file": "retrieval_evaluate.py",
+    "null_handling": "exclude null_query",
+    "repository": "https://github.com/yixuantt/MultiHop-RAG",
+    "revision": "c1c1287aa60a94acf9c4d20c891c9cd611a0f6e8"
+  },
+  "resource_difference": "Jylus ran as a live remote service; the baseline ran locally on the stated workstation. Latency is descriptive, not a controlled comparison.",
+  "resources_not_equivalent": true,
+  "schema": "jylus.multihop-rag-frozen-configuration.v1",
+  "selection": {
+    "method": "lowest SHA-256(multihop-rag-frozen-v1\\0 + question text)",
+    "runtime_gold_access": false,
+    "sample_size": 256,
+    "selected_before_ranking": true
+  }
+}

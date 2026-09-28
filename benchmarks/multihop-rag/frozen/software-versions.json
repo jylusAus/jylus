@@ -1,0 +1,12 @@
+{
+  "captured_at_utc": "2026-09-28",
+  "client_cpu": "AMD Ryzen 9 9950X, 16 cores / 32 logical processors",
+  "client_gpu": "NVIDIA GeForce RTX 5060 Ti, driver 32.0.16.1088",
+  "client_os": "Microsoft Windows 11 Pro 10.0.26200 build 26200",
+  "datasets": "5.0.1",
+  "jylus_service_hardware": "not disclosed or controlled by this client-side evaluation",
+  "numpy": "2.5.2",
+  "ollama": "0.30.5",
+  "python": "3.12.10",
+  "requests": "2.34.2"
+}

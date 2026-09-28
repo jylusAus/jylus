@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+benchmarks/multihop-rag/data/
+benchmarks/multihop-rag/cache/
+benchmarks/multihop-rag/runs/
+benchmarks/multihop-rag/vendor/
+benchmarks/multihop-rag/config.json
+
