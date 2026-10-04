@@ -93,19 +93,13 @@ or batch runtime. No complete ingestion-to-ready timing or per-query monetary
 cost was established for this release; no cost or ingestion-speed comparison is
 reported. There are no competitor latency measurements in this evaluation.
 
-## Limits and release guards
+## Evaluation limits
 
 The first 100 questions were selected by lowest SHA-256(query ID) and used for
 development and candidate selection. The complete 830 includes those questions.
 Qrels were not opened by the retrieval client, but were used in earlier offline
 analysis. Query-only previews and rejected candidates are recorded in the audit.
 This result does not prove universal superiority or better final answers.
-
-Separately, this live release retained QASPER test retrieval at **51.162602%
-nDCG@10 / 75.881019% Recall@10** (1,335 queries), native FinQA official execution
-at **39.843069%** / program **34.612031%** (1,147 cases), and a **251-question**
-TEMPO NDCG guard at **40.670800%**. The TEMPO result is a lightweight regression
-check, not the full benchmark or a temporal-consistency judgment.
 
 The official data is downloaded separately; corpus text, decrypted questions,
 answers and qrels are not redistributed here. See the upstream

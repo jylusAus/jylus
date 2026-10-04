@@ -18,13 +18,10 @@ There is no agent, answer model, prompt or answer judge in this Jylus run.
    regressions. The retained v31 variant was selected and measured over all 830
    on October 2. Thus the full cohort had previously been scored too; this is
    not a newly untouched held-out set.
-4. On October 3, an execution-only source lookup improvement was tested against
-   complete QASPER/FinQA and the lightweight TEMPO control using isolated API
-   instances. No scoring or model-based reranking change was included in it.
-5. On October 4 at 01:12:24 UTC, the verified release was switched to production,
-   the previous query process stopped and retained, and public API, trial,
-   source/proof and normal event-ingest checks passed. Full public QASPER and
-   FinQA plus the 251-question TEMPO guard passed before this BrowseComp run.
+4. On October 3, an execution-only source lookup improvement was tested before
+   the final run. No scoring or model-based reranking change was included in it.
+5. On October 4 at 01:12:24 UTC, the tested build became the active public API
+   version. API authentication and source/proof checks passed before this run.
 6. The final 830 public HTTPS run used frozen runtime code and the same benchmark
    corpus generation; no candidate tuning occurred during it. All original
    questions, difficult cases and returned rankings are retained. The output
@@ -66,10 +63,8 @@ No saved question-to-answer packet or qrel data is deployed as runtime code.
 
 ## Failures, data and verification
 
-Earlier rejected candidates and failed deployment/test attempts were retained
-privately. A product canary initially omitted a required history timestamp
-bound; a corrected check reused the exact ingested record. That harness failure
-was not removed from the private release audit or counted as a quality result.
+Earlier rejected BrowseComp candidates and failed retrieval attempts were
+retained privately and were not relabeled as the final measured result.
 Final full-cohort query failures, retries and timing coverage are reported in
 the results manifest. Missing queries are a scorer error; empty failed outputs
 score zero, never disappear from the denominator.
