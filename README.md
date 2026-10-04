@@ -5,4 +5,4 @@ This repository contains reproducible, public benchmark reports for Jylus. It do
 ## Benchmarks
 
 - [MultiHop-RAG: Jylus vs NVIDIA-style agentic RAG](benchmarks/multihop-rag/README.md)
-
+- [BrowseComp-Plus: Jylus native retrieval, all 830 questions](benchmarks/browsecomp-plus/README.md)

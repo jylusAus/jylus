@@ -1,0 +1,137 @@
+{
+  "dataset": {
+    "corpus": "Tevatron/browsecomp-plus-corpus",
+    "revision": "b27b02bc3e45511b8b82a13e6f90ce761df726f6",
+    "documents": 100195,
+    "queries": 830,
+    "upstream_commit": "046949032b0328319cc9a02663a759ec601d9402",
+    "source_queries_sha256": "70fba9985cf3494167c4b65a8ffdef5041dadd6811f6f10053ffccfd3ca2e969",
+    "document_ids": "Official corpus docid values, preserved through UTF-8 chunks; obtain complete inventory via corpus-manifest.json downloads",
+    "qrels_sha256": {
+      "evidence_qrels": "01322d07c6b8a43b61dcb679ef53cdd4ea9b4200c68342cd32666d0e815f5d0e",
+      "gold_qrels": "6094dcf00dca1fbb14876669b9cc9b58702aacd60b84c651ede819089b805aa9"
+    }
+  },
+  "jylus_stack_build": "0913e75e61cded6ec0f82e6f54ddf5ec7ac26dc1",
+  "query_image_sha256": "ccfdb0a34b7ede9fc58cd866cef25f722625fcc60b38ef95db62459fe11d0c8b",
+  "api_boundary_build": "b3cf4b14608b8aacc4394e65139857deabeeed8a",
+  "models": [],
+  "embedding_models": [],
+  "prompts": [],
+  "requests": {
+    "workers": 2,
+    "per_question": 1,
+    "model_calls": 0,
+    "source": "history",
+    "collection": "api_public.browsecomp-plus",
+    "where": "fixed benchmark namespace, collection and timestamp >= 2026-09-28T04:14:00Z",
+    "text": "first 500 UTF-16 units",
+    "vector.text": "entire original question; native service field, not a supplied embedding",
+    "deep_scan": true,
+    "scan_limit": 50000,
+    "limit": 1536,
+    "include_results": true,
+    "cache_bypass_header": "receipt-verification",
+    "context": {
+      "mode": "decision",
+      "token_budget": 8000,
+      "max_facts": 10,
+      "max_timeline": 20,
+      "max_contradictions": 12,
+      "include_documents": false
+    }
+  },
+  "ingest": {
+    "chunk_bytes": 32000,
+    "whitespace_preferred": true,
+    "batch_events_max": 100,
+    "batch_bytes_max": 900000,
+    "workers": 2,
+    "transport": "ordinary NATS-backed public API",
+    "occurred_at": "2026-09-28T04:15:00Z",
+    "existing_collection_reused_for_current_run": true,
+    "provider_collection_profile_not_distributed": true,
+    "fresh_full_corpus_reingest_parity_verified": false
+  },
+  "selection": {
+    "all_official_queries": true,
+    "question_order_file": "query-ids.tsv",
+    "development_cohort": "first 100 lowest SHA-256(query ID); remaining 730 retain original official order",
+    "cohort_used_for_development": true,
+    "fully_blind": false
+  },
+  "ranking": "Ascending evidence_rank, first occurrence of official document ID, rank-order score for TREC; no score-resort",
+  "historical_reference": {
+    "label": "jylus-v30-reference",
+    "run_date": "2026-09-30",
+    "build": "v30 working tree; immutable source identifier not established by the saved manifest",
+    "service_image_publicly_distributed": false,
+    "transport": "isolated API through a private controller bridge",
+    "workers": 2,
+    "limit": 1536,
+    "scan_limit": 50000,
+    "context_token_budget": 8000,
+    "max_facts": 10,
+    "query_and_corpus_inputs": "same frozen official inventory and collection",
+    "transport_recovery_attempts_max": 8,
+    "all_bridge_recovery_attempts_measured": false,
+    "resource_and_latency_equivalence_established": false
+  },
+  "hardware": {
+    "kernel": "7.0.0-28-generic",
+    "cpu_model": "AMD EPYC 4464P",
+    "logical_cpus": 24,
+    "memory_total_gib": 125.40632629394531,
+    "os_release": "Ubuntu 24.04.4 LTS",
+    "node_version": "v24.18.0",
+    "http_client_python": "3.12.3",
+    "process_limits": {
+      "query": {
+        "cpus": 4,
+        "memory_gib": 32
+      },
+      "retrieval": {
+        "cpus": 4,
+        "memory_gib": 32,
+        "ram_and_swap_gib": 64
+      }
+    },
+    "shared_production_host": true,
+    "gpu_model_inference": false,
+    "physical_cpu_cores": 12
+  },
+  "software": {
+    "controller_python": "3.12.10",
+    "requests": "2.34.2",
+    "numpy": "2.5.3",
+    "pytrec-eval-terrier": "0.5.10"
+  },
+  "artifacts": {
+    "jylus-live": {
+      "queries": 830,
+      "export_sha256": "ae3cb583c46b3a181d8f04166ea2e4d594eb79cd85a268efdb0663f1d139c804",
+      "original_results_sha256": "62c16d676524842e3582596e026593e0c15df06bf7c77f9a4edb0e9084ba9adb",
+      "timing_coverage": {
+        "wall_ms": 830,
+        "server_ms": 830
+      },
+      "status_counts": {
+        "200": 830
+      },
+      "retried_questions": 0
+    },
+    "jylus-v30-reference": {
+      "queries": 830,
+      "export_sha256": "059d2f4978b0a261ee06d2fd31d3eb2be577b4b9a10c848db3e0c19e02aa2b0a",
+      "original_results_sha256": "0eece20336203739dd8f25e035f44cb3b044d82d349bf695590529aa0f102af7",
+      "timing_coverage": {
+        "wall_ms": 830,
+        "server_ms": 830
+      },
+      "status_counts": {
+        "200": 830
+      },
+      "retried_questions": 0
+    }
+  }
+}

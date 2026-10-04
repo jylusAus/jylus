@@ -1,0 +1,30 @@
+{
+  "questions": 830,
+  "failures": 0,
+  "workers": 2,
+  "complete_responses": 0,
+  "latency_ms": {
+    "server_p50": 4918.886,
+    "server_p95": 8228.465,
+    "wall_max": 13049.939,
+    "wall_p50": 5148.24,
+    "wall_p95": 8462.613
+  },
+  "elapsed_seconds": 4751.669,
+  "results_sha256": "62c16d676524842e3582596e026593e0c15df06bf7c77f9a4edb0e9084ba9adb",
+  "model_calls": 0,
+  "qrels_opened_during_retrieval": false,
+  "result_document_counts": {
+    "max": 1000,
+    "median": 1000.0,
+    "min": 1000
+  },
+  "api_url": "https://api.jylus.ai/api/v1/analyze",
+  "timing_coverage": {
+    "wall_ms": 830,
+    "server_ms": 830
+  },
+  "transport": "on-host public HTTPS with ordinary tenant API key; controller via private transport bridge",
+  "output_directory_created_utc": "2026-10-04T01:37:13.080174+00:00",
+  "run_manifest_written_utc": "2026-10-04T02:56:24.833647+00:00"
+}

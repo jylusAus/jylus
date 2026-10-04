@@ -1,0 +1,13 @@
+{
+  "Retriever": "Jylus native stack (0913e75)",
+  "Link": "https://github.com/jylusAus/jylus/tree/main/benchmarks/browsecomp-plus",
+  "Evaluation Date": "2026-10-04",
+  "Evidence nDCG@10": 0.1617822701920004,
+  "Evidence Recall@5": 0.11648576991950486,
+  "Evidence Recall@100": 0.2399070541239216,
+  "Evidence Recall@1000": 0.6417874093777708,
+  "Gold nDCG@10": 0.1346455864468583,
+  "Gold Recall@5": 0.12932922164849875,
+  "Gold Recall@100": 0.24902897303499713,
+  "Gold Recall@1000": 0.6582415375788869
+}

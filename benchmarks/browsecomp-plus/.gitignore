@@ -1,0 +1,12 @@
+__pycache__/
+.venv/
+data/
+upstream/
+my-query-run/
+my-scores/
+rescored/
+*.private.*
+.env*
+ingest-report.json
+dry-run.json
+reproduced-report.md
