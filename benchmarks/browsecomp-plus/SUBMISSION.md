@@ -28,7 +28,6 @@ the result. No submission email has been sent.
   [config.json](config.json), [REPRODUCTION.md](REPRODUCTION.md),
   [AUDIT.md](AUDIT.md) and [SHA256SUMS](SHA256SUMS): scoring evidence,
   frozen inputs, access requirements, limitations and file integrity.
-- [submission-email.txt](submission-email.txt): ready-to-send review request.
 
 ## Reviewer verification
 
