@@ -1,0 +1,278 @@
+{
+  "track": "normal query",
+  "domains": [
+    "bitcoin",
+    "cardano",
+    "economics",
+    "genealogy",
+    "history",
+    "hsm",
+    "iota",
+    "law",
+    "monero",
+    "politics",
+    "quant",
+    "travel",
+    "workplace"
+  ],
+  "dataset_repository": "tempo26/Tempo",
+  "corpus_revision": "f9df06c05688225e37701974d23c8e3c5d4efaf6",
+  "query_protocol_revision": "1dba7027d0afa628993c6dd794e9b68c657a6fac",
+  "queries": 1730,
+  "corpus_documents": 1654055,
+  "upstream_repository": "https://github.com/tempo-bench/Tempo",
+  "upstream_commit": "8731487254e0988eaf2ca4ae3e93ff587fec64d0",
+  "dataset_files": [
+    {
+      "domain": "bitcoin",
+      "kind": "examples",
+      "relative_path": "examples/bitcoin.parquet",
+      "revision": "1dba7027d0afa628993c6dd794e9b68c657a6fac",
+      "sha256": "59d6ba938caf477dc3ec483e1f56e5ed00bce5b47230f1a2f45c233fac1ea295",
+      "rows": 100
+    },
+    {
+      "domain": "bitcoin",
+      "kind": "documents",
+      "relative_path": "documents/bitcoin.parquet",
+      "revision": "f9df06c05688225e37701974d23c8e3c5d4efaf6",
+      "sha256": "248106172d2cb391bf29e776163daa2e224d73afe57ab38ccff8d5ab27558fe1",
+      "rows": 153291
+    },
+    {
+      "domain": "cardano",
+      "kind": "examples",
+      "relative_path": "examples/cardano.parquet",
+      "revision": "1dba7027d0afa628993c6dd794e9b68c657a6fac",
+      "sha256": "097a4a801b63424f207b480747a1c7013b6d43368c5fdf6c1df36d7d8b49fe37",
+      "rows": 51
+    },
+    {
+      "domain": "cardano",
+      "kind": "documents",
+      "relative_path": "documents/cardano.parquet",
+      "revision": "f9df06c05688225e37701974d23c8e3c5d4efaf6",
+      "sha256": "70ce3fa4cd5660156d3c51d24916d49521d59659a3a772ca06f6232c29ab6948",
+      "rows": 87201
+    },
+    {
+      "domain": "economics",
+      "kind": "examples",
+      "relative_path": "examples/economics.parquet",
+      "revision": "1dba7027d0afa628993c6dd794e9b68c657a6fac",
+      "sha256": "764ce276971c83a0f05a2b3192d7ec606dc9f026cdfb9ad8758f33abf51dc36e",
+      "rows": 83
+    },
+    {
+      "domain": "economics",
+      "kind": "documents",
+      "relative_path": "documents/economics.parquet",
+      "revision": "f9df06c05688225e37701974d23c8e3c5d4efaf6",
+      "sha256": "77ea08e8f190205976b2a8ded38d0a33b660b8a7bc71de9b34c03a9138787859",
+      "rows": 93756
+    },
+    {
+      "domain": "genealogy",
+      "kind": "examples",
+      "relative_path": "examples/genealogy.parquet",
+      "revision": "1dba7027d0afa628993c6dd794e9b68c657a6fac",
+      "sha256": "98e00e196d563802e343df5b7041a4694da6eb7b6579284442ebd99ee906e889",
+      "rows": 115
+    },
+    {
+      "domain": "genealogy",
+      "kind": "documents",
+      "relative_path": "documents/genealogy.parquet",
+      "revision": "f9df06c05688225e37701974d23c8e3c5d4efaf6",
+      "sha256": "739169c19da86178d5b870a3eaaca41d1b1af32e979f3da382515a7c0d378485",
+      "rows": 156228
+    },
+    {
+      "domain": "history",
+      "kind": "examples",
+      "relative_path": "examples/history.parquet",
+      "revision": "1dba7027d0afa628993c6dd794e9b68c657a6fac",
+      "sha256": "56495c2b56866d44ba19eea5a9756c8216e3bd52d65949fadc3e3d17c87ffeb5",
+      "rows": 801
+    },
+    {
+      "domain": "history",
+      "kind": "documents",
+      "relative_path": "documents/history.parquet",
+      "revision": "f9df06c05688225e37701974d23c8e3c5d4efaf6",
+      "sha256": "a4b22ce7a0609ca3defc14a36ce7a741cbab5ef2f2325568e483f3ee2c198cbb",
+      "rows": 356493
+    },
+    {
+      "domain": "hsm",
+      "kind": "examples",
+      "relative_path": "examples/hsm.parquet",
+      "revision": "1dba7027d0afa628993c6dd794e9b68c657a6fac",
+      "sha256": "25f6c18188b88ac4f5dcb58c83b37ac62d1b73b7a2c5fb46d1235019c128f3f0",
+      "rows": 150
+    },
+    {
+      "domain": "hsm",
+      "kind": "documents",
+      "relative_path": "documents/hsm.parquet",
+      "revision": "f9df06c05688225e37701974d23c8e3c5d4efaf6",
+      "sha256": "880c5ad095273c86b5d24833185c08ccee3915c16f4f3749348d5771f6f4bd1d",
+      "rows": 213818
+    },
+    {
+      "domain": "iota",
+      "kind": "examples",
+      "relative_path": "examples/iota.parquet",
+      "revision": "1dba7027d0afa628993c6dd794e9b68c657a6fac",
+      "sha256": "79eb29454ed69c746eceb508d6f00a0b07fd89d1dce12ee13ade7d86ab26705c",
+      "rows": 10
+    },
+    {
+      "domain": "iota",
+      "kind": "documents",
+      "relative_path": "documents/iota.parquet",
+      "revision": "f9df06c05688225e37701974d23c8e3c5d4efaf6",
+      "sha256": "ca69f1f551ecf7262ee5bf164504a8fef97b52c96499ba6480bc7a461f8db9c3",
+      "rows": 10372
+    },
+    {
+      "domain": "law",
+      "kind": "examples",
+      "relative_path": "examples/law.parquet",
+      "revision": "1dba7027d0afa628993c6dd794e9b68c657a6fac",
+      "sha256": "d1d026a841c40feb8b9cb761b8af240264b9379f5f11e11385dfc03d174c1a70",
+      "rows": 35
+    },
+    {
+      "domain": "law",
+      "kind": "documents",
+      "relative_path": "documents/law.parquet",
+      "revision": "f9df06c05688225e37701974d23c8e3c5d4efaf6",
+      "sha256": "c6a0b3dbf0d777f8ede11998c2947cca37cd86f436836f29ca05a8a723647d06",
+      "rows": 43288
+    },
+    {
+      "domain": "monero",
+      "kind": "examples",
+      "relative_path": "examples/monero.parquet",
+      "revision": "1dba7027d0afa628993c6dd794e9b68c657a6fac",
+      "sha256": "6a0e7417942fcf76295befaddc5e246d4a35582c57ec6939d17c434f93dba594",
+      "rows": 65
+    },
+    {
+      "domain": "monero",
+      "kind": "documents",
+      "relative_path": "documents/monero.parquet",
+      "revision": "f9df06c05688225e37701974d23c8e3c5d4efaf6",
+      "sha256": "f76335aa33f2c0a72388feef220330d0ffe52979b1b1aecc95b2b9c15fa530e6",
+      "rows": 85093
+    },
+    {
+      "domain": "politics",
+      "kind": "examples",
+      "relative_path": "examples/politics.parquet",
+      "revision": "1dba7027d0afa628993c6dd794e9b68c657a6fac",
+      "sha256": "e7f503e393e6c87909fee27fa87a1737d2ee8d5c5f8eefbc8aacd749310f4b06",
+      "rows": 150
+    },
+    {
+      "domain": "politics",
+      "kind": "documents",
+      "relative_path": "documents/politics.parquet",
+      "revision": "f9df06c05688225e37701974d23c8e3c5d4efaf6",
+      "sha256": "5662c668a05d88f00f09e4aec104989464f0cea4818c4cfcfafb6ccb9408bcc2",
+      "rows": 183394
+    },
+    {
+      "domain": "quant",
+      "kind": "examples",
+      "relative_path": "examples/quant.parquet",
+      "revision": "1dba7027d0afa628993c6dd794e9b68c657a6fac",
+      "sha256": "f548346df75f99df12d7ebcd617d44e3b0421225dd3d99da7262e66061bf42a0",
+      "rows": 34
+    },
+    {
+      "domain": "quant",
+      "kind": "documents",
+      "relative_path": "documents/quant.parquet",
+      "revision": "f9df06c05688225e37701974d23c8e3c5d4efaf6",
+      "sha256": "30283086d66d6b5a2d55b21e7b53403c69e38adcf1eb2699daa91e83bd3e9b05",
+      "rows": 28785
+    },
+    {
+      "domain": "travel",
+      "kind": "examples",
+      "relative_path": "examples/travel.parquet",
+      "revision": "1dba7027d0afa628993c6dd794e9b68c657a6fac",
+      "sha256": "d42f60421dac02b374390ccbf3348a3c6473476d6ccf24973a1c6a3ce6ee7b95",
+      "rows": 100
+    },
+    {
+      "domain": "travel",
+      "kind": "documents",
+      "relative_path": "documents/travel.parquet",
+      "revision": "f9df06c05688225e37701974d23c8e3c5d4efaf6",
+      "sha256": "666aa368a7ca42c879cc5a153431d3b9f8ec1452d8d00325cb9e8ed10f918025",
+      "rows": 177677
+    },
+    {
+      "domain": "workplace",
+      "kind": "examples",
+      "relative_path": "examples/workplace.parquet",
+      "revision": "1dba7027d0afa628993c6dd794e9b68c657a6fac",
+      "sha256": "e5f17c03c249af6319993d9bc820fcd97ac96b3c9e32fd48ad2c3b56a05bdba2",
+      "rows": 36
+    },
+    {
+      "domain": "workplace",
+      "kind": "documents",
+      "relative_path": "documents/workplace.parquet",
+      "revision": "f9df06c05688225e37701974d23c8e3c5d4efaf6",
+      "sha256": "7fd6e93fb2b83e25eb9a00709a2bb72886d0281baa438508954ac0b1393d994a",
+      "rows": 64659
+    }
+  ],
+  "build": "0913e75e61cded6ec0f82e6f54ddf5ec7ac26dc1",
+  "api_url": "https://api.jylus.ai/api/v1/analyze",
+  "namespace": "default",
+  "collection_prefix": "api_public.tempo.",
+  "timestamp_lower_bound": "2026-09-13T00:00:00Z",
+  "request": {
+    "workers": 2,
+    "text": "first 500 UTF-16 units of the original query",
+    "vector.text": "entire original query; native input field, no supplied embedding",
+    "limit": 10,
+    "scan_limit": 20000,
+    "cache_bypass": "receipt-verification",
+    "source": "history",
+    "excluded_document_ids": "official negative_ids projected through lossless SHA-256 ID normalization",
+    "context": {
+      "mode": "decision",
+      "token_budget": 8000,
+      "max_facts": 10,
+      "max_timeline": 20,
+      "max_contradictions": 12,
+      "include_documents": false
+    }
+  },
+  "models": [],
+  "embedding_models": [],
+  "agent": false,
+  "model_prompts": [],
+  "runtime_id_projection": "tempo-doc- + first 24 hexadecimal characters of SHA-256(official document ID UTF-8)",
+  "query_identity": "domain and exact official example ID",
+  "provider_corpus_profile_required": true,
+  "fresh_full_corpus_api_reingest_parity_demonstrated": false,
+  "hardware": {
+    "cpu": "AMD EPYC 4464P",
+    "logical_cpus": 24,
+    "physical_cores": 12,
+    "memory_gib": 125.40632629394531,
+    "query_process_cpus": 4,
+    "query_process_memory_gib": 32,
+    "shared_production_host": true,
+    "gpu_inference": false
+  },
+  "measurement": "ordinary authenticated public HTTPS from deployment host; HTTP timer excludes SSH controller result transfer",
+  "paid_judge_calls": 0
+}

@@ -1,0 +1,80 @@
+{
+  "questions": 1730,
+  "domains": 13,
+  "track": "normal query",
+  "question_mean_ndcg_at_10_percent": 41.90043346498586,
+  "domain_macro_ndcg_at_10_percent": 41.36461817443252,
+  "upstream_rounded_domain_macro_ndcg_at_10_percent": 41.365,
+  "per_domain": {
+    "bitcoin": {
+      "queries": 100,
+      "ndcg_at_10_percent": 29.455991216733924,
+      "upstream_rounded_ndcg_at_10": 0.29456
+    },
+    "cardano": {
+      "queries": 51,
+      "ndcg_at_10_percent": 46.93880199038229,
+      "upstream_rounded_ndcg_at_10": 0.46939
+    },
+    "economics": {
+      "queries": 83,
+      "ndcg_at_10_percent": 44.089361101611416,
+      "upstream_rounded_ndcg_at_10": 0.44089
+    },
+    "genealogy": {
+      "queries": 115,
+      "ndcg_at_10_percent": 43.91685663813944,
+      "upstream_rounded_ndcg_at_10": 0.43917
+    },
+    "history": {
+      "queries": 801,
+      "ndcg_at_10_percent": 39.7785901693454,
+      "upstream_rounded_ndcg_at_10": 0.39779
+    },
+    "hsm": {
+      "queries": 150,
+      "ndcg_at_10_percent": 57.858876258811605,
+      "upstream_rounded_ndcg_at_10": 0.57859
+    },
+    "iota": {
+      "queries": 10,
+      "ndcg_at_10_percent": 53.935044383736056,
+      "upstream_rounded_ndcg_at_10": 0.53935
+    },
+    "law": {
+      "queries": 35,
+      "ndcg_at_10_percent": 42.975922274226974,
+      "upstream_rounded_ndcg_at_10": 0.42976
+    },
+    "monero": {
+      "queries": 65,
+      "ndcg_at_10_percent": 13.921310200353366,
+      "upstream_rounded_ndcg_at_10": 0.13921
+    },
+    "politics": {
+      "queries": 150,
+      "ndcg_at_10_percent": 64.019286633434,
+      "upstream_rounded_ndcg_at_10": 0.64019
+    },
+    "quant": {
+      "queries": 34,
+      "ndcg_at_10_percent": 22.520583329503808,
+      "upstream_rounded_ndcg_at_10": 0.22521
+    },
+    "travel": {
+      "queries": 100,
+      "ndcg_at_10_percent": 27.501401136102285,
+      "upstream_rounded_ndcg_at_10": 0.27501
+    },
+    "workplace": {
+      "queries": 36,
+      "ndcg_at_10_percent": 50.828010935242304,
+      "upstream_rounded_ndcg_at_10": 0.50828
+    }
+  },
+  "failed_questions": 0,
+  "averaging": "question mean: all 1730 queries; domain macro: unweighted mean of 13 domain means",
+  "label_source": "official pinned binary gold_ids; no answer/temporal judgment",
+  "tp_at_10": null,
+  "tc_at_10": null
+}

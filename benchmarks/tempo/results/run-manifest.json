@@ -1,0 +1,32 @@
+{
+  "started_at": "2026-10-04T05:21:35.723536+00:00",
+  "finished_at": "2026-10-04T06:56:40.047010+00:00",
+  "queries": 1730,
+  "workers": 2,
+  "api_url": "https://api.jylus.ai/api/v1/analyze",
+  "http_status_counts": {
+    "200": 1730
+  },
+  "query_batch_seconds": 5541.14308140002,
+  "http_timing_coverage": 1730,
+  "server_timing_coverage": 1730,
+  "http_median_ms": 6266.715875826776,
+  "http_p95_ms": 8810.815528174862,
+  "http_max_ms": 11984.120304696262,
+  "server_median_ms": 6256.055,
+  "server_p95_ms": 8801.28335,
+  "percentiles": "linear interpolation at (N-1)p",
+  "runtime_build": "0913e75e61cded6ec0f82e6f54ddf5ec7ac26dc1",
+  "model_calls": 0,
+  "initial_overstrict_proof_checks": 2,
+  "bounded_proof_prefix_questions": 2,
+  "receipt_revalidation_repeated_api_requests": 0,
+  "compiler_prefix_order_valid_questions": 1730,
+  "runtime_changes_during_measurement": false,
+  "new_service_restarts": 0,
+  "source_checks_before_after": "39 exact scoped chunks each; sampled controls, not full corpus hash",
+  "ingestion_to_ready_time": null,
+  "cost_comparison": null,
+  "tp_at_10": null,
+  "tc_at_10": null
+}
