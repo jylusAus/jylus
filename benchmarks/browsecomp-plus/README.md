@@ -35,6 +35,8 @@ needed to answer; gold qrels also require the final answer to be present.
 [audit/limitations](AUDIT.md) describe corpus ingestion, scope, request budgets,
 software, resource differences and service access. Only benchmark client and
 evaluation code are public; the proprietary service is not distributed.
+The [leaderboard submission guide](SUBMISSION.md) links the official JSON,
+standard TREC export and reviewer verification command.
 
 ## Historical internal reference — quality only
 

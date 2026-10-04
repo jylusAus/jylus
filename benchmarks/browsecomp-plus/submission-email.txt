@@ -1,0 +1,35 @@
+To: s42chen@uwaterloo.ca
+Subject: BrowseComp-Plus retrieval-only submission: Jylus native stack
+Attachment: leaderboard-submission.json
+
+Hello BrowseComp-Plus maintainers,
+
+Please review the attached Jylus native stack result for the retrieval-only
+leaderboard. This is a complete 830-question evaluation against the official
+100,195-document corpus, measured through the live authenticated public API
+on 2026-10-04. There were zero query failures and no exclusions.
+
+Public model card, results and reproduction package:
+https://github.com/jylusAus/jylus/tree/main/benchmarks/browsecomp-plus
+
+The JSON contains the eight official retrieval metrics in TREC 0-1 units.
+Evidence Recall@1000 is 0.6417874093777708 and Gold Recall@1000 is
+0.6582415375788869. Evidence nDCG@10 is 0.1617822701920004 and Gold nDCG@10
+is 0.1346455864468583.
+
+The repository includes the complete rank-preserving TREC export, per-question
+rankings and metrics, scorer, frozen configurations, file checksums and the
+actual evaluation sequence. verify_submission.py reproduces all eight JSON
+metrics from the published TREC file and exact official qrels without API access.
+
+This is an internal, retrieval-only evaluation, with no LLM agent, generated
+answers or answer-accuracy claim. We disclose prior development/tuning exposure
+in AUDIT.md. The proprietary service build/profile is not publicly downloadable;
+fresh full-corpus API re-ingest parity has not been demonstrated. The full saved
+output can be independently rescored without a Jylus account.
+
+Please let us know if you need additional information for review or a different
+submission format for the retrieval-only category.
+
+Thank you,
+Jylus
